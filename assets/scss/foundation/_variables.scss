@@ -1,0 +1,53 @@
+// fonts
+$font-jp: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+$font-en: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-size: 1.5rem;
+$font-size-tab: 1.6rem;
+$font-size-pc: 1.8rem;
+$font-weight-ttl: 700;
+$font-weight-txt: 400;
+$line-height-ttl: 1.32;
+$line-height-txt: 2;
+$letter-spacing-txt: 0;
+$letter-spacing-ttl: 0;
+
+// Basic colors
+$color-black1:#333;
+$color-gray1:#999;
+$color-white1: #fff;
+$color-green1: #006e60;
+$color-green2: #1e8275;
+$color-orange1: #e19324;
+$color-orange2: #ebd494;
+$color-beige1: #e5dbc6;
+$color-beige2: #e9e1d1;
+$color-brown1: #817057;
+$color-brown2: #c1b59d;
+
+// Parts colors
+// common
+$color-txt: $color-black1;
+$color-ttl: $color-green1;
+$color-marker: $color-orange2;
+
+// header
+$color-header: $color-white1;
+
+// footer
+
+// btn
+$color-btn: $color-orange1;
+
+// path
+$pathImages: "../images";
+
+// breakpoints
+$breakpoints: (
+	"xxs": "375px",
+	"xs": "576px",
+	"sm": "768px",
+	"md": "1024px",
+	"lg": "1280px",
+	"xl": "1920px",
+	"max-xxs": "374px",
+) !default;

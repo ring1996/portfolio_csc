@@ -1,0 +1,47 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-beige2;
+  color: $color-txt;
+  font-size: $font-size;
+  font-family: $font-jp;
+  font-weight: $font-weight-txt;
+  line-height: $line-height-txt;
+  letter-spacing: $letter-spacing-txt;
+  -webkit-text-size-adjust: 100%;
+}
+
+@include media(min, sm) {
+  body {
+    font-size: $font-size-tab;
+  }
+}
+
+@include media(min, md) {
+  body {
+    font-size: $font-size-pc;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-ttl;
+  line-height: $line-height-ttl;
+  letter-spacing: $letter-spacing-ttl;
+}
+
+*[lang="en"] {
+  font-family: $font-en;
+}

@@ -1,0 +1,35 @@
+.u-none {
+  @include media(max, sm) {
+    &-sp {
+      display: none;
+    }
+  }
+  @include media(between, sm, md) {
+    &-tab {
+      display: none;
+    }
+  }
+  @include media(min, md) {
+    &-pc {
+      display: none;
+    }
+  }
+}
+
+.u-exist {
+  @include media(max, sm) {
+    &-sp {
+      display: inline;
+    }
+  }
+  @include media(between, sm, md) {
+    &-tab {
+      display: inline;
+    }
+  }
+  @include media(min, md) {
+    &-pc {
+      display: inline;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.p-header {
+  &__ttl {
+    width: 38vw;
+    a {
+      outline: none;
+      transition-property: opacity;
+      transition-timing-function: ease-out;
+      transition-duration: .3s;
+      &:hover,
+      &:focus {
+        opacity: .5;
+      }
+    }
+  }
+  &__nav {
+    &__list {
+      position: absolute;
+      top: 120px;
+      right: -70vw;
+      width: 70vw;
+      opacity: 0;
+      transition-property: right opacity;
+      transition-timing-function: ease-out;
+      transition-duration: .3s;
+      .is-activeHamburger & {
+        right: 0;
+        opacity: 1;
+      }
+    }
+    &__item {
+      width: 100%;
+      padding: 0 6%;
+      text-align: center;
+      + .p-header__nav__item {
+        margin-top: 40px;
+      }
+      a {
+        color: $color-white1;
+        font-weight: 700;
+        font-size: 1.6rem;
+        outline: none;
+        transition-property: color;
+        transition-duration: .3s;
+        transition-timing-function: ease-out;
+        &:hover,
+        &:focus {
+          color: $color-orange1;
+        }
+      }
+      .c-button {
+        display: block;
+        width: calc(100% - 20px);
+        margin: 0 10px;
+        padding: 8px 0;
+        border-radius: 25px;
+        transition-property: filter;
+        transition-duration: .3s;
+        transition-timing-function: ease-out;
+        outline: none;
+        &:hover,
+        &:focus {
+          filter: brightness(120%);
+          color: $color-white1;
+        }
+      }
+    }
+  }
+}
+
+body {
+  &::before {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: -70vw;
+    content: "";
+    display: block;
+    background-color: $color-green1;
+    width: 70vw;
+    height: 100vh;
+    opacity: 0;
+    transition-property: right opacity;
+    transition-timing-function: ease-out;
+    transition-duration: .3s;
+  }
+  &.is-activeHamburger {
+    &::before {
+      right: 0;
+      opacity: 1;
+    }
+  }
+}
+
+@include media(min, sm) {
+  .p-header {
+    &__ttl {
+      max-width: 180px;
+    }
+  }
+}
+
+@include media(min, md) {
+  .p-header {
+    &__ttl {
+      width: 100%;
+      max-width: 240px;
+    }
+    &__nav {
+      &__list {
+        position: static;
+        opacity: 1;
+        width: 100%;
+      }
+      &__item {
+        width: auto;
+        padding: 0;
+        text-align: center;
+        + .p-header__nav__item {
+          margin-top: 0;
+          margin-left: 30px;
+        }
+        a {
+          color: $color-black1;
+          font-size: 1.8rem;
+          &:hover,
+          &:focus {
+            color: $color-orange1;
+          }
+        }
+        .c-button {
+          display: block;
+          width: 170px;
+          margin: 0;
+          padding: 4px 0;
+        }
+      }
+    }
+  }
+  body {
+    &::before {
+      content: none;
+    }
+  }
+}

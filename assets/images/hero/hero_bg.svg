@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="973" height="886" viewBox="0 0 973 886">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e5dbc6;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="img_hero_bg.svg" data-name="img/hero_bg.svg" class="cls-1" d="M627,0s33.369,148.773,249,216,333.17,249.543,368,387,229.04,283,356,283V0H627Z" transform="translate(-627)"/>
+</svg>

@@ -1,0 +1,59 @@
+.c-button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &.--primary {
+    background-color: $color-btn;
+    color: $color-white1;
+    font-weight: 700;
+    position: relative;
+  }
+  &.--arrow {
+    &Bottom {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        right: 30px;
+      }
+      &::before {
+        background-color: $color-white1;
+        transform: rotate(45deg) translateY(-50%);
+        top: calc(50% - 3px);
+      }
+      &::after {
+        background-color: $color-btn;
+        transform: rotate(45deg) translateY(-50%);
+        top: calc(50% - 6px);
+      }
+    }
+    &Right {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        top: 50%;
+      }
+      &::before {
+        background-color: $color-white1;
+        transform: rotate(45deg) translateY(-50%);
+        right: 30px
+      }
+      &::after {
+        background-color: $color-btn;
+        transform: rotate(45deg) translateY(-50%);
+        right: 34px;
+      }
+    }
+  }
+}

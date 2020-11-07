@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="137.5" viewBox="0 0 1600 137.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #006e60;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="img_application_bg_before.svg" data-name="img/application_bg_before.svg" class="cls-1" d="M-1,7032s180.755-80.79,360-2c166.8,73.32,294.777,95,547,95,231.48,0,433-38,433-38s154.22-40.35,261-40c-0.62-.57,0,86,0,86H-1V7032Z" transform="translate(0 -6995.5)"/>
+</svg>

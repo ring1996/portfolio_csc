@@ -1,0 +1,83 @@
+// グリッド
+.l-grid {
+  display: grid;
+  // sp
+  &.-sp1 {
+    grid-template-columns: none;
+  }
+  &.-sp2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &.-sp3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &.-sp4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &.-sp5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  &.-sp6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  &.-sp7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  &.-sp8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  // tab
+  @include media(min, sm) {
+    &.-tab1 {
+      grid-template-columns: none;
+    }
+    &.-tab2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &.-tab3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &.-tab4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &.-tab5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    &.-tab6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    &.-tab7 {
+      grid-template-columns: repeat(7, 1fr);
+    }
+    &.-tab8 {
+      grid-template-columns: repeat(8, 1fr);
+    }
+  }
+  // pc
+  @include media(min, md) {
+    &.-pc1 {
+      grid-template-columns: none;
+    }
+    &.-pc2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &.-pc3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &.-pc4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &.-pc5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    &.-pc6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    &.-pc7 {
+      grid-template-columns: repeat(7, 1fr);
+    }
+    &.-pc8 {
+      grid-template-columns: repeat(8, 1fr);
+    }
+  }
+}

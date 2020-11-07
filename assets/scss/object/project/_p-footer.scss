@@ -1,0 +1,111 @@
+.p-footer {
+  &__aside {
+    margin: 0 auto;
+    color: $color-white1;
+    &__nav {
+      + .p-footer__aside__nav {
+        margin-top: 30px;
+      }
+    }
+    &__ttl {
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+    &__item {
+      margin-top: 10px;
+      + .p-footer__aside__item {
+        margin-left: 20px;
+      }
+      a {
+        position: relative;
+        display: block;
+        width: 24px;
+        height: 24px;
+        outline: none;
+        transition-property: opacity;
+        transition-timing-function: ease-out;
+        transition-duration: .3s;
+        &:hover,
+        &:focus {
+          opacity: .5;
+        }
+      }
+      i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 2.4rem;
+      }
+    }
+  }
+  &__copyright {
+    margin-top: 40px;
+    color: $color-white1;
+    a {
+      outline: none;
+      transition-property: opacity;
+      transition-timing-function: ease-out;
+      transition-duration: .3s;
+      &:hover,
+      &:focus {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+@include media(min, md) {
+  .p-footer {
+    &__aside {
+      position: fixed;
+      left: 3%;
+      top: 0;
+      bottom: 0;
+      width: 18px;
+      color: $color-black1;
+      z-index: 1000;
+      &__nav {
+        + .p-footer__aside__nav {
+          margin-top: 0;
+          &::before {
+            content: "";
+            display: block;
+            background-color: $color-green1;
+            width: 14px;
+            height: 1px;
+            margin: 18px 0;
+          }
+        }
+      }
+      &__ttl {
+        font-size: 1.4rem;
+        writing-mode: vertical-rl;
+      }
+      &__list {
+        display: block;
+      }
+      &__item {
+        margin-top: 18px;
+        + .p-footer__aside__item {
+          margin-left: 0;
+        }
+        a {
+          width: 18px;
+          height: 18px;
+        }
+        i {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    &__copyright {
+      margin-top: 0;
+    }
+  }
+}

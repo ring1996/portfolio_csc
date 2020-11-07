@@ -1,0 +1,70 @@
+.p-hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("#{$pathImages}/hero/hero_bg.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  &__txt {
+    margin-top: 20px;
+  }
+  &__img {
+    display: none;
+  }
+  &__btn {
+    .c-button {
+      width: 100%;
+      max-width: 330px;
+      padding: 12px;
+      text-align: center;
+      border-radius: 30px;
+      margin-top: 20px;
+      transition-property: filter top;
+      transition-duration: .3s;
+      transition-timing-function: ease-out;
+      outline: none;
+      &::before,
+      &::after {
+        transition-property: filter top;
+        transition-duration: .3s;
+        transition-timing-function: ease-out;
+      }
+      &:hover,
+      &:focus {
+        filter: brightness(120%);
+        &::before {
+          top: calc(50% + 5px);
+        }
+        &::after {
+          top: calc(50% + 2px);
+        }
+      }
+    }
+  }
+}
+
+@include media(min, md) {
+  .p-hero {
+    &__content {
+      width: 60%;
+      padding-right: 4%;
+    }
+    &__ttl {
+      white-space: nowrap;
+    }
+    &__btn {
+      font-size: 2rem;
+    }
+    &__img {
+      display: flex;
+      width: 40%;
+    }
+  }
+}
+
+@include media(max, max-xxs) {
+  .p-hero {
+    height: 120vh;
+    padding-top: 20vh;
+  }
+}

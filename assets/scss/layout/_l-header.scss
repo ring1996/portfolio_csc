@@ -1,0 +1,23 @@
+.l-header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  padding: 13px 3%;
+  background-color: rgba($color-header, .8);
+}
+
+@include media(min, md) {
+  .l-header {
+    background-color: transparent;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition-property: padding background-color;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+    .is-scrollHeader & {
+      background-color: rgba($color-header, .8);
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+}

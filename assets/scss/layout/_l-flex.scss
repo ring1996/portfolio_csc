@@ -1,0 +1,174 @@
+.l-flex {
+  display: flex;
+  // 折り返し
+  &.--wrap {
+    flex-wrap: wrap;
+  }
+  // 並び順
+  &.--reverse {
+    flex-direction: row-reverse;
+  }
+  // 縦
+  &.--vertical {
+    flex-direction: column;
+  }
+  // 横
+  &.--side {
+    flex-direction: row;
+  }
+  // 水平方向
+  &.--left {
+    justify-content: flex-start;
+  }
+  &.--center {
+    justify-content: center;
+  }
+  &.--right {
+    justify-content: flex-end;
+  }
+  &.--justify {
+    justify-content: space-between;
+  }
+  // 垂直方向
+  &.--top {
+    align-items: flex-start;
+  }
+  &.--middle {
+    align-items: center;
+  }
+  &.--bottom {
+    align-items: flex-end;
+  }
+}
+
+@include media(min, sm) {
+  .l-flex {
+    // 折り返し
+    &.--wrap {
+      &-tab {
+        flex-wrap: wrap;
+      }
+    }
+    // 並び順
+    &.--reverse {
+      &-tab {
+        flex-direction: row-reverse;
+      }
+    }
+    // 縦
+    &.--vertical {
+      &-tab {
+        flex-direction: column;
+      }
+    }
+    // 横
+    &.--side {
+      &-tab {
+        flex-direction: row;
+      }
+    }
+    // 水平方向
+    &.--left {
+      &-tab {
+        justify-content: flex-start;
+      }
+    }
+    &.--center {
+      &-tab {
+        justify-content: center;
+      }
+    }
+    &.--right {
+      &-tab {
+        justify-content: flex-end;
+      }
+    }
+    &.--justify {
+      &-tab {
+        justify-content: space-between;
+      }
+    }
+    // 垂直方向
+    &.--top {
+      &-tab {
+        align-items: flex-start;
+      }
+    }
+    &.--middle {
+      &-tab {
+        align-items: center;
+      }
+    }
+    &.--bottom {
+      &-tab {
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+@include media(min, md) {
+  .l-flex {
+    // 折り返し
+    &.--wrap {
+      &-pc {
+        flex-wrap: wrap;
+      }
+    }
+    // 並び順
+    &.--reverse {
+      &-pc {
+        flex-direction: row-reverse;
+      }
+    }
+    // 縦
+    &.--vertical {
+      &-pc {
+        flex-direction: column;
+      }
+    }
+    // 横
+    &.--side {
+      &-pc {
+        flex-direction: row;
+      }
+    }
+    // 水平方向
+    &.--left {
+      &-pc {
+        justify-content: flex-start;
+      }
+    }
+    &.--center {
+      &-pc {
+        justify-content: center;
+      }
+    }
+    &.--right {
+      &-pc {
+        justify-content: flex-end;
+      }
+    }
+    &.--justify {
+      &-pc {
+        justify-content: space-between;
+      }
+    }
+    // 垂直方向
+    &.--top {
+      &-pc {
+        align-items: flex-start;
+      }
+    }
+    &.--middle {
+      &-pc {
+        align-items: center;
+      }
+    }
+    &.--bottom {
+      &-pc {
+        align-items: flex-end;
+      }
+    }
+  }
+}

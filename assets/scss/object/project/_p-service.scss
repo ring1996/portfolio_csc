@@ -1,0 +1,32 @@
+.p-service {
+  background-color: $color-beige1;
+  background-image: url("#{$pathImages}/service/service_bg_left.svg"),  url("#{$pathImages}/service/service_bg_right.svg");
+  background-position: left 35%, right 75%;
+  background-repeat: no-repeat, no-repeat;
+  padding-bottom: 110px;
+  &__ttl {
+    margin-top: 60px;
+  }
+  &__txt {
+    margin-top: 20px;
+  }
+  &__img {
+    width: 60%;
+    max-width: 320px;
+    padding-top: 50px;
+  }
+}
+
+@include media(min, md) {
+  .p-service {
+    &__content {
+      width: 62.5%;
+      padding-right: 6%;
+    }
+    &__img {
+      width: 37.5%;
+      max-width: none;
+      padding-top: 100px;
+    }
+  }
+}

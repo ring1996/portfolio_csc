@@ -1,0 +1,59 @@
+.p-card {
+  column-gap: 30px;
+  margin-top: 40px;
+  &__item {
+    background-color: $color-white1;
+    padding: 40px 20px 20px 20px;
+    border-radius: 6px;
+    &:nth-of-type(n+2) {
+      margin-top: 15px;
+    }
+  }
+  &__ttl {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $color-ttl;
+    margin-top: 10px;
+    text-align: center;
+  }
+  &__img {
+    order: -1;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__txt {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    line-height: 1.6;
+    letter-spacing: -.1em;
+    text-align: left;
+  }
+}
+
+@include media(min, sm) {
+  .p-card {
+    &__item {
+      &:nth-of-type(n+2) {
+        margin-top: 0;
+      }
+      &:nth-of-type(n+3) {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@include media(min, md) {
+  .p-card {
+    &__ttl {
+      font-size: 2rem;
+    }
+    &__item {
+      &:nth-of-type(n+3) {
+        margin-top: 0;
+      }
+    }
+  }
+}

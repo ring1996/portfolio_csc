@@ -1,0 +1,46 @@
+.p-price {
+  position: relative;
+  z-index: 1;
+  padding: 180px 6% 290px;
+  background-image: url("#{$pathImages}/price/price_bg_before1.svg"), url("#{$pathImages}/price/price_bg_before2.svg"), url("#{$pathImages}/price/price_bg_after1.svg"), url("#{$pathImages}/price/price_bg_after2.svg");
+  background-position: top left 16%, top center, bottom right 16%, bottom 40px center;
+  background-repeat: no-repeat;
+  background-size: 130px auto, 100vw auto, 150px auto, 100vw auto;
+  text-align: center;
+  &__img {
+    margin-top: 30px;
+  }
+  &__txt {
+    margin-top: 30px;
+  }
+  &__define {
+    max-width: 800px;
+    width: 100%;
+    margin: 50px auto 0;
+    border-top: 2px solid $color-brown2;
+    &__item {
+      padding: 20px 10px;
+      border-bottom: 1px dashed $color-gray1;
+    }
+    &__term {
+      width: 100%;
+      text-align: left;
+    }
+    &__desc {
+      width: 100%;
+      text-align: right;
+    }
+  }
+}
+
+@include media(min, sm) {
+  .p-price {
+    background-size: 200px auto, 100vw auto, 200px auto, 100vw auto;
+  }
+}
+
+@include media(min, md) {
+  .p-price {
+    background-size: 250px auto, 100vw auto, 240px auto, 100vw auto;
+  }
+}

@@ -1,0 +1,21 @@
+.p-concept {
+  text-align: center;
+  background-image: url("#{$pathImages}/service/service_bg_before.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  padding: 100px 6% 140px;
+  &__txt {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+
+@include media(min, sm) {
+  .p-concept {
+    padding: 160px 6% 280px;
+    &__txt {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.p-tool {
+  margin-top: 80px;
+  text-align: center;
+  &__txt {
+    margin-top: 20px;
+  }
+  &__list {
+    column-gap: 30px;
+    margin-top: 40px;
+  }
+  &__item {
+    background-color: $color-white1;
+    border-radius: 6px;
+    padding: 30px;
+    + .p-tool__item {
+      margin-top: 15px;
+    }
+    &__img {
+      height: 130px;
+      img {
+        max-width: 170px;
+        max-height: 68px;
+      }
+    }
+    &__txt {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@include media(min, sm) {
+  .p-tool {
+    &__item {
+      + .p-tool__item {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@include media(min, md) {
+  .p-tool {
+    &__item {
+      + .p-tool__item {
+        margin-top: 0;
+      }
+    }
+  }
+}
